@@ -106,4 +106,4 @@ rm(cols, y_data, x_data, subject) # clean up
 # -------------------------------------------------------------------------------------------------
 
 averages_by_subject <- ddply(data, c("Subject","Activity"), numcolwise(mean))
-write.table(averages_by_subject, file = "./averages_by_subject.txt")
+write.table(averages_by_subject, file = "./averages_by_subject.txt",  row.name=FALSE)
